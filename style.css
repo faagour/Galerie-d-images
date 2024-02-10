@@ -1,1 +1,51 @@
+/* style.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.gallery {
+    text-align: center;
+}
+
+#main-image {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    width: 15%;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+.navigation {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 24px;
+    user-select: none; /* Empêche la sélection du texte sur les flèches */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#left-arrow {
+    left: 10px;
+}
+
+#right-arrow {
+    right: 10px;
+}
+
+#main-image {
+    padding: 0 30px; /* Assurez-vous que les flèches ne chevauchent pas l'image */
+}
+
 
